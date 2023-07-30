@@ -29,7 +29,7 @@ section {
   border-top-left-radius: 50% 100%;
   border-top-right-radius: 50% 100%;
   position: absolute;
-  bottom: 0px;
+  bottom: 0;
   z-index: -1;
   width: 75%;
   background-color: #e4f5b1;
@@ -44,12 +44,13 @@ section {
   text-align: center;
   padding-top: 80px;
   color: #635274;
+  margin-left: 140px;
 }
 
 .nubey{
   width: 70%;
   height: 70%;
-  align-self: center;
+  margin-right: 140px;
 }
 
 .line {
