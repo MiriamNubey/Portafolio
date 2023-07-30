@@ -44,13 +44,50 @@ section {
   text-align: center;
   padding-top: 80px;
   color: #635274;
-  margin-left: 140px;
 }
 
-.nubey{
-  width: 70%;
-  height: 70%;
-  margin-right: 140px;
+/* Estilos responsivos */
+@media screen and (max-width: 768px) {
+  /* Para pantallas de hasta 768px de ancho */
+  .name {
+    font-size: 70px; /* Ajustamos el tamaño de fuente para dispositivos más pequeños */
+    margin-left: 5px; /* Reducimos el margen izquierdo */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  /* Para pantallas de hasta 480px de ancho (dispositivos móviles) */
+  .name {
+    font-size: 50px; /* Ajustamos el tamaño de fuente aún más */
+    margin-left: 30px; /* Reducimos el margen izquierdo para adaptarlo mejor a pantallas pequeñas */
+  }
+}
+
+.nubey {
+  width: 70%; 
+  max-width: 500px;
+  height: auto; 
+  display: block; 
+  margin: 0 auto; /
+}
+
+/* Estilos responsivos */
+@media screen and (max-width: 768px) {
+  /* Para pantallas de hasta 768px de ancho */
+  .nubey {
+    width: 50%; /* Reducimos la anchura para pantallas más pequeñas */
+    max-width: 400px; /* Ajustamos el límite máximo de la anchura */
+    margin-right: 85px; /* Reducimos el margen derecho para adaptarlo a pantallas pequeñas */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  /* Para pantallas de hasta 480px de ancho (dispositivos móviles) */
+  .nubey {
+    width: 80%; /* Ajustamos la anchura aún más para pantallas pequeñas */
+    max-width: 300px; /* Ajustamos el límite máximo de la anchura */
+    margin-right: 20px; /* Reducimos el margen derecho para adaptarlo mejor a pantallas pequeñas */
+  }
 }
 
 .line {
