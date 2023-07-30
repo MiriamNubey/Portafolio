@@ -44,6 +44,7 @@ section {
   text-align: center;
   padding-top: 80px;
   color: #635274;
+  margin-right: 10px;
 }
 
 /* Estilos responsivos */
@@ -95,20 +96,39 @@ section {
   font-family: 'Space Mono', monospace;
   position: relative;
   top: 50%;
-  width: 16em;
-  margin: 0 auto;
+  width: 90%; /* Usamos porcentaje para que se ajuste al ancho del contenedor padre */
+  max-width: 16em; /* Establecemos un límite máximo de 16em para la anchura */
+  margin: 0 auto; /* Centramos horizontalmente */
   border-right: 2px solid rgba(255, 255, 255, 0.75);
   font-size: 25px;
   color: #173c3c;
   white-space: nowrap;
-  overflow: hidden;transform: translateY(-50%);
+  overflow: hidden;
+  transform: translateY(-50%);
+}
+
+/* Estilos responsivos */
+@media screen and (max-width: 768px) {
+  /* Para pantallas de hasta 768px de ancho */
+  .line {
+    font-size: 20px; /* Reducimos el tamaño de fuente para pantallas más pequeñas */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  /* Para pantallas de hasta 480px de ancho (dispositivos móviles) */
+  .line {
+    font-size: 20px; /* Ajustamos el tamaño de fuente aún más */
+    max-width: 100%; /* Ajustamos la anchura al 100% para ocupar todo el ancho del contenedor */
+  }
 }
 
 /*Animation*/
 .anim-typewriter {
-  animation: typewriter 4s steps(25) 1s 1 normal both,
-  blinkTextCursor 500ms steps(25) infinite normal;
+  animation: typewriter 4s steps(20) 1s 1 normal both,
+  blinkTextCursor 500ms steps(20) infinite normal;
 }
+
 @keyframes typewriter {
   from {
         width: 0;
