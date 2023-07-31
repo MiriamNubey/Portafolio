@@ -71,21 +71,20 @@ section {
   display: block; 
   margin: 0 auto; /
 }
-
 /* Estilos responsivos */
-
 @media screen and (max-width: 768px) {
+  /* Para pantallas de hasta 768px de ancho */
   .nubey {
-    width: 45%; 
+    width: 50%; 
     max-width: 400px; 
-    margin-right: 120px; 
+    margin-right: 85px; 
   }
 }
-
 @media screen and (max-width: 480px) {
+  /* Para pantallas de hasta 480px de ancho (dispositivos móviles) */
   .nubey {
-    width: 45%; 
-    max-width: 400px; 
+    width: 80%; 
+    max-width: 300px; 
     margin-right: 20px; 
   }
 }
